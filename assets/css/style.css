@@ -1,0 +1,304 @@
+/**
+*Khoi Nguyen
+*Homework #1
+*Basic Portfolio - About + Portfolio + Contact styling sheet.  
+**/
+
+* {
+	/*sizing properties for Height and Width*/
+	box-sizing: border-box;
+}
+body {
+	/*per spec - all other fonts use:*/
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	/**per spec - regular font color (used for paragraphs and all text
+	*besides the headings)
+	**/
+	color: #777777;
+	background: url(../images/skulls.png);
+	margin: 0;
+}
+/*common styles for all headings, will override this parent if needed.*/
+.headings {
+	/*per spec - use Teal as background color*/
+	color: #4aaaa5;
+	/*per spec - main header background color*/
+	background-color: #ffffff;
+	/*per spec - main header border color*/
+	border-bottom: 2px solid #cccccc;
+	/*per spec - haeding fonts use:*/
+	font-family: 'Georgia', Times, Times New Roman, serif;
+}
+#mainHeaderWrapper{
+	width: 960px;
+	/*center wrapper nicely in the middle*/
+	margin: 0 auto;
+	position: relative;
+}
+#yourName {
+	/*change block element to inline element*/
+	display: inline-block;
+	color: white;
+	background-color: #4aaaa5;
+	width: 30%;
+	text-align: center;
+	line-height: 80px;
+	margin: 0;
+	/** Alternate method: using floats
+	*float: left;
+	*width: 30%;
+	*text-align: center;
+	*background-color: #4aaaa5;
+	*color: white;
+	**/
+}
+#pageLinks {
+	/*change block element to inline element*/
+	display: inline-block;
+	width: 20%;
+	text-align: right;
+	position: absolute;
+	right: 0;
+	top: 30px;
+	/** Alternate method: using floats
+	*float: right;
+	*width: 70%;
+	*text-align: right;	
+	*font-size: 20px;
+	**/
+}
+/*main header link styling + bonus feature*/
+a {
+	color: #777777;
+}
+a:link {
+    text-decoration: none;
+}
+/*link does not turn purple once visited*/
+a:visited {
+    text-decoration: none;
+}
+/*underlines link upon hover*/
+a:hover {
+    text-decoration: underline;
+}
+/*Bonus feature to change backgroun upon hover*/
+.backgroundSwitch:hover {
+	background-color: orange;
+}
+
+/***********END OF MAIN HEADER STYLING*******************/
+
+#contentArea {
+	/*per spec - entire content area is 960px wide*/
+	width: 960px;
+	/*nicely centered*/
+	margin: 0 auto;
+}
+#headingLayout {
+	/*align with main content padding*/
+	margin: 0 40px;
+	line-height: 60px;
+}
+#mainContent {
+	display: inline-block;
+	/**per spec - The main section content is 650px wide.
+	*654px = (630+20+4)px
+	**/
+	width: 654px;
+	margin: 40px 10px 0 0;
+	/*per spec - Main content background color:*/
+	background-color: #ffffff;
+	/*per spec - Main content border color:*/
+	border: 2px solid #dddddd;
+}
+#myPic {
+	/*allows main text to wrap around the pic*/
+	float: left;
+	padding-right: 20px;
+	margin-top: 10px;
+}
+#bio-image {
+	/*give bio + image padding and match that of the content header*/
+	padding: 40px;
+}
+#mainText {
+	font-size: 20px;
+	line-height: 40px;
+	margin: 0;
+}
+/**************************************************
+* Portfolio Sytling section
+***************************************************/
+
+.sectionLayout {
+	background-color: #4aaaa5;
+	color: white;
+	/*positioning relative to parent sport*/
+	position: absolute;
+	bottom: 15px;
+	left: 30px;
+	width: 200px;
+}
+#soccer {
+	/*converting block element to inline element*/
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	margin: 20px 25px;
+	/*for section to position itself absolutely*/
+	position: relative;
+	line-height: 25px;
+}
+#roadBike {
+	/*converting block element to inline element*/
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	margin: 20px;
+	/*for section to position itself absolutely*/
+	position: relative;
+	line-height: 25px;
+}
+#baseball {
+	/*converting block element to inline element*/
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	margin: 20px 25px;
+	/*for section to position itself absolutely*/
+	position: relative;
+	line-height: 25px;
+}
+#surfing {
+	/*converting block element to inline element*/
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	margin: 20px;
+	/*for section to position itself absolutely*/
+	position: relative;
+	line-height: 25px;
+}
+#track {
+	/*converting block element to inline element*/
+	display: inline-block;
+	width: 40%;
+	text-align: center;
+	margin: 25px;
+	/*for section to position itself absolutely*/
+	position: relative;
+	line-height: 25px;
+}
+
+/*************************************************
+* End of Portfolio section
+**************************************************/
+/*************************************************
+* Contacts Styling section
+**************************************************/
+#formLayout {
+	margin: 40px 0  0 40px;
+	line-height: 40px;
+	font-size: 20px;
+}
+#name {
+	/**label is an inline element, converting to block element
+	*to take up entire line.
+	**/
+	display: block;
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+}
+#email {
+	/**label is an inline element, converting to block element
+	*to take up entire line.
+	**/
+	display: block;
+	width: 100%;
+	height: 30px;
+	font-size: 15px;
+}
+#message {
+	/**label is an inline element, converting to block element
+	*to take up entire line.
+	**/
+	display: block;
+	width: 100%;
+	height: 300px;
+}
+.submitButton {
+	background-color: #4aaaa5; 
+	font-size: 20px;
+	height: 40px;
+	margin: 20px 0;
+	color: white;
+}
+/**************************************************
+* End of Contacts section
+***************************************************/
+
+/***********END OF MAIN CONTENT STYLING*******************/
+
+#sideBar {
+	display: inline-block;
+	/**per spec - The side bar content is 270px wide.
+	*274px = (190+80+4)px
+	**/
+	width: 274px;
+	height: 200px;
+	text-align: center;
+	border: 2px solid #dddddd;
+	margin: 40px 0 0 17px;
+	/*align with the mainContent*/
+	vertical-align: top;
+	padding: 40px;
+	background-color: #ffffff;
+	position: relative;
+}
+#sideBarWrapper {
+	/*relative to parent position in sideBar*/
+	position: absolute;
+	top: 10px;	
+}
+#connectHeader {
+	font-size: 20px;
+	text-align: center;
+	line-height: 60px;
+	/*overriding class headerLayout inheritance*/
+	border-top: 0;
+	border-bottom: 1px solid #cccccc; 
+	margin-bottom: 20px;
+}
+/*Bonus Rotation feature for icons*/
+.rotateIcon:hover  {
+  -ms-transform: rotate(-20deg);
+  -webkit-transform: rotate(-20deg);
+  -moz-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+}
+
+/***********END OF SIDEBAR STYLING*******************/
+
+#footerWrapper {
+	/*bonus sitcky footer feature*/
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	margin-top: 20px;
+}
+#preFooter {
+	background-color: #4aaaa5;
+	height: 10px;
+}
+footer {
+	text-align: center;
+	background-color: #666666;
+	color: white;
+	font-size: 15px;
+	line-height: 40px;
+}
+/***********END OF FOOTER STYLING*******************/
+
