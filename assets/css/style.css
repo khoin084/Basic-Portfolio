@@ -97,16 +97,16 @@ a:hover {
 }
 #headingLayout {
 	/*align with main content padding*/
-	margin: 0 40px;
+	margin: 40px 40px 10px 40px;
 	line-height: 60px;
 }
 #mainContent {
 	display: inline-block;
 	/**per spec - The main section content is 650px wide.
-	*654px = (630+20+4)px
+	*650px = [646(content)+2(border)+2(border)]px
 	**/
-	width: 654px;
-	margin: 40px 10px 0 0;
+	width: 650px;
+	margin: 40px 0 0 0;
 	/*per spec - Main content background color:*/
 	background-color: #ffffff;
 	/*per spec - Main content border color:*/
@@ -137,7 +137,7 @@ a:hover {
 	/*positioning relative to parent sport*/
 	position: absolute;
 	bottom: 15px;
-	left: 30px;
+	left: 29px;
 	width: 200px;
 }
 #soccer {
@@ -244,23 +244,17 @@ a:hover {
 #sideBar {
 	display: inline-block;
 	/**per spec - The side bar content is 270px wide.
-	*274px = (190+80+4)px
+	*270px = [186(content)+80(padding)+4(border)]px
 	**/
-	width: 274px;
+	width: 270px;
 	height: 200px;
 	text-align: center;
 	border: 2px solid #dddddd;
-	margin: 40px 0 0 17px;
+	margin: 40px 0 0 34px;
 	/*align with the mainContent*/
 	vertical-align: top;
 	padding: 40px;
 	background-color: #ffffff;
-	position: relative;
-}
-#sideBarWrapper {
-	/*relative to parent position in sideBar*/
-	position: absolute;
-	top: 10px;	
 }
 #connectHeader {
 	font-size: 20px;
